@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Tanggal pengerjaan : 25/05/2023
+    Nim : 10120784
+    Nama : Denisa Alyaa Putri
+    Kelas : IF-9 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:src="@drawable/img1"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_below="@id/img1"
+            android:layout_width="330dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_centerHorizontal="true">
+
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="21dp"
+                    android:text="Pelaksanaan PPDB Tahap 1 2023"
+                    android:textColor="#424242"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/detail"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"></ImageView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+                <SeekBar
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:max="300"
+                    android:progress="250"
+                    android:layout_marginLeft="10dp"></SeekBar>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon"
+                    android:layout_marginLeft="3dp"></ImageView>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Persiapan"
+                        android:textStyle="bold"
+                        android:textColor="#212121"
+                        android:textSize="14sp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_below="@id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="17 Mei - 05 Juni 2023">
+                    </TextView>
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img"
+                    android:layout_marginLeft="50dp"></ImageView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_below="@id/card"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:id="@+id/RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pengumuman"
+                    android:layout_marginTop="15dp">
+                </ImageView>
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_below="@id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengumuman Hasil Seleksi"
+                    android:textSize="16sp"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="100dp"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedcorner">
+
+                <LinearLayout
+                    android:id="@+id/LL8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt5"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Anda dinyatakan diterima di"
+                        android:textColor="#F44336"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp">
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/detail2"
+                        android:layout_marginLeft="5dp"></ImageView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_below="@id/LL8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMA Negeri 1 Bojonggede"
+                    android:textColor="#424242"
+                    android:textSize="16sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp">
+                </TextView>
+                <TextView
+                    android:layout_below="@id/txt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jalur Prestasi Kejuaraan"
+                    android:textColor="#616161"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp">
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_below="@id/card2"
+            android:layout_width="330dp"
+            android:layout_height="420dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/toga">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Layanan PPDB"
+                    android:textColor="#212121"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt7"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="7dp"
+                    android:drawableLeft="@drawable/location"
+                    android:text="Kota Bandung"
+                    android:textColor="@color/green"></TextView>
+
+                <LinearLayout
+                    android:id="@+id/LL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt7">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/sekolah"></ImageView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="65dp"
+                        android:text="Info Sekolah PPDB"
+                        android:textColor="#212121"></TextView>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="70dp"
+                        android:src="@drawable/img3"></ImageView>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/garis1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL2"
+                    android:layout_marginTop="10dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LL2">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/sosialisasi"></ImageView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Sosialisasi PPDB"
+                        android:textColor="#212121"></TextView>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="27dp"
+                        android:src="@drawable/img3"></ImageView>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/garis2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL3"
+                    android:layout_marginTop="10dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LL3">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/berkas"></ImageView>
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Pendaftaran PPDB Tahap 1"
+                        android:textColor="#212121"></TextView>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="27dp"
+                        android:src="@drawable/img3"></ImageView>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/garis3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL4"
+                    android:layout_marginTop="10dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LL4">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/pengumuman2"></ImageView>
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Pengumuman PPDB Tahap 2"
+                        android:textColor="#212121"></TextView>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="27dp"
+                        android:src="@drawable/img3"></ImageView>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/garis4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL5"
+                    android:layout_marginTop="10dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LL5">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/hotline"></ImageView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Hotline"
+                        android:textColor="#212121"></TextView>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="27dp"
+                        android:src="@drawable/img3"></ImageView>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_below="@id/card3"
+            android:layout_width="330dp"
+            android:layout_height="720dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pengumuman"
+                    android:layout_marginTop="15dp">
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_below="@id/img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berita Terkait PPDB"
+                    android:textSize="20sp"
+                    android:textColor="#212121"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txt9"
+                    android:layout_below="@id/txt8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dapatkan semua informasi terbaru dan terpopuler terkait PPDB"
+                    android:textColor="#424242"
+                    android:layout_marginLeft="10dp">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/txt9"
+                    android:src="@drawable/img6"
+                    android:layout_marginLeft="15dp"></ImageView>
+
+                <LinearLayout
+                    android:id="@+id/LL7"
+                    android:layout_below="@id/img5"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt10"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="PPDB SMA/ SMK 2022, Ridwan Kamil: PPDB Di Jawa Barat..."
+                            android:textColor="#212121"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt11"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Pendidikan"
+                            android:textColor="#757575"
+                            android:layout_marginTop="50dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="70dp">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bulet"
+                                android:layout_marginTop="58dp"
+                                android:layout_marginLeft="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="15 jam yang lalu"
+                                android:textColor="#9E9E9E"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="60dp">
+                            </TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/img3"></ImageView>
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/garis5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL7"
+                    android:layout_marginTop="15dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL9"
+                    android:layout_below="@id/LL7"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt12"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Persiapan PPDB Jabar Tahun 2021 Sudah Matang"
+                            android:textColor="#212121"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt13"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Pendidikan"
+                            android:textColor="#757575"
+                            android:layout_marginTop="50dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="70dp">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bulet"
+                                android:layout_marginTop="58dp"
+                                android:layout_marginLeft="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="4 Juni 2022"
+                                android:textColor="#9E9E9E"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="60dp">
+                            </TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/img3"></ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/garis6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL9"
+                    android:layout_marginTop="15dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL10"
+                    android:layout_below="@id/LL9"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt14"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Pelaksanaan Teknis PPDB Harus Evaluasi Diri"
+                            android:textColor="#212121"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt15"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Pendidikan"
+                            android:textColor="#757575"
+                            android:layout_marginTop="50dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="70dp">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bulet"
+                                android:layout_marginTop="58dp"
+                                android:layout_marginLeft="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="24 Mei 2022"
+                                android:textColor="#9E9E9E"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="60dp">
+                            </TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/img3"></ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:id="@+id/garis7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL10"
+                    android:layout_marginTop="15dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL11"
+                    android:layout_below="@id/LL10"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt16"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Masih ditemukan 'Blank Spot' dalam Proses PPDB Kabupate..."
+                            android:textColor="#212121"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt17"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Pendidikan"
+                            android:textColor="#757575"
+                            android:layout_marginTop="50dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="70dp">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bulet"
+                                android:layout_marginTop="58dp"
+                                android:layout_marginLeft="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="24 Mei 2022"
+                                android:textColor="#9E9E9E"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="60dp">
+                            </TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/img3"></ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:id="@+id/garis8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL11"
+                    android:layout_marginTop="15dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/LL12"
+                    android:layout_below="@id/LL11"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img4"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp">
+                    </ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt18"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Bupati Purwakarta Hadiri Pembukaan Masa Pengenalan..."
+                            android:textColor="#212121"
+                            android:textStyle="bold"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt19"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Pendidikan"
+                            android:textColor="#757575"
+                            android:layout_marginTop="50dp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="70dp">
+
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/bulet"
+                                android:layout_marginTop="58dp"
+                                android:layout_marginLeft="70dp">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:text="19 Juli 2022"
+                                android:textColor="#9E9E9E"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginRight="60dp">
+                            </TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/img3"></ImageView>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:id="@+id/garis9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/LL12"
+                    android:layout_marginTop="15dp"
+                    android:background="#EAEAEA"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:id="@+id/LL14"
+                    android:layout_below="@+id/LL12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp">
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat semua berita"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp">
+                    </TextView>
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:src="@drawable/img3"></ImageView>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@id/card4"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/img5"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp">
+                </ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali ke atas"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp">
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>
